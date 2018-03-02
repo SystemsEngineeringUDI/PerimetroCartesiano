@@ -4,8 +4,6 @@
  * Jhon Velasco
  * @frediv0406
  * Estudiante: Ing.Sistemas UDI
-Programa que mediante registros en C realiza operaciones entre números complejos, entre las
-operaciones están suma,resta y multiplicación.
 */
 
 /*
@@ -53,13 +51,13 @@ void impresioncita(float a){ //Se imprime el resultado
 int main(){
 	int i;
 	float b=0;
-	int m=PedirPuntos(); //Se llama la función y se asigna lo que retorna a una variable
+	int m=PedirPuntos(); //Se llama la funciÃ³n y se asigna lo que retorna a una variable
 	pun v[m]; //Se crea un arreglo de estructuras
 	for(i=0;i<m;i++){ //Se llena el vector
 		pun b=leerPun();
 		v[i]=b;
 	}
-	for (i=0;i<(m-1);i++){ //Se halla el perimetro sin tener en cuenta la unión entre el primer y ultimo punto
+	for (i=0;i<(m-1);i++){ //Se halla el perimetro sin tener en cuenta la uniÃ³n entre el primer y ultimo punto
 		float a=raicita(v[i],v[i+1]);
 		b+=a;
 	}
